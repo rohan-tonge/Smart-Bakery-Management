@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="favBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fb923c" />
+      <stop offset="50%" stop-color="#ea580c" />
+      <stop offset="100%" stop-color="#c2410c" />
+    </linearGradient>
+    <linearGradient id="favCrust" x1="20%" y1="10%" x2="80%" y2="90%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#fff7ed" />
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="128" fill="url(#favBg)" />
+
+  <g transform="translate(0, 10)">
+    <path d="M 120 330 C 100 280, 110 200, 180 150 C 230 115, 282 115, 332 150 C 402 200, 412 280, 392 330 C 382 355, 350 350, 342 325 C 330 290, 310 260, 256 260 C 202 260, 182 290, 170 325 C 162 350, 130 355, 120 330 Z"
+          fill="url(#favCrust)" />
+
+    <!-- Scoring slash lines -->
+    <path d="M 220 160 Q 256 185 292 160" fill="none" stroke="#ea580c" stroke-width="9" stroke-linecap="round" />
+    <path d="M 175 210 Q 210 230 225 215" fill="none" stroke="#ea580c" stroke-width="8" stroke-linecap="round" />
+    <path d="M 337 210 Q 302 230 287 215" fill="none" stroke="#ea580c" stroke-width="8" stroke-linecap="round" />
+
+    <!-- Aroma steam -->
+    <path d="M 226 95 Q 220 80 228 65" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" opacity="0.8" />
+    <path d="M 256 88 Q 262 72 254 58" fill="none" stroke="#ffffff" stroke-width="7.5" stroke-linecap="round" opacity="0.9" />
+    <path d="M 286 95 Q 292 80 284 65" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" opacity="0.8" />
+  </g>
+</svg>

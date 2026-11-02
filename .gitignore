@@ -1,0 +1,38 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+!client/.env.example
+!server/.env.example
+
+# Dependencies
+node_modules/
+
+# Generated frontend builds
+client/dist/
+client/dev-dist/
+server/dist/
+.dist/
+
+# Backend backups and uploaded payment proofs
+server/backups/
+server/uploads/
+/backups/
+/uploads/
+
+# Verification screenshots and test artifacts
+verification_screenshots/
+server/verification_screenshots/
+client/audit-screenshots/
+audit-screenshots/
+.browser-audit-*
+
+# Logs and coverage
+*.log
+coverage/
+
+# Local editor and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

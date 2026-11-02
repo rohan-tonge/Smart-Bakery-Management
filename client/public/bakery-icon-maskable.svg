@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="maskableBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fb923c" />
+      <stop offset="50%" stop-color="#ea580c" />
+      <stop offset="100%" stop-color="#c2410c" />
+    </linearGradient>
+    <linearGradient id="crustGradM" x1="20%" y1="10%" x2="80%" y2="90%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="60%" stop-color="#fff7ed" />
+      <stop offset="100%" stop-color="#ffedd5" />
+    </linearGradient>
+    <linearGradient id="goldGradM" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fed7aa" />
+      <stop offset="100%" stop-color="#f97316" />
+    </linearGradient>
+    <filter id="softShadowM" x="-10%" y="-10%" width="120%" height="130%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#7c2d12" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Full-bleed background for maskable icon (no border-radius) -->
+  <rect width="512" height="512" fill="url(#maskableBgGrad)" />
+
+  <!-- Logo group scaled and centered to fit within the 80% safe zone (radius 204.8 at 256,256) -->
+  <g transform="translate(256, 256) scale(0.8) translate(-256, -256)">
+    <!-- Main Bakery Croissant Emblem -->
+    <g filter="url(#softShadowM)" transform="translate(0, 10)">
+      <!-- Central Main Body -->
+      <path d="M 120 330 C 100 280, 110 200, 180 150 C 230 115, 282 115, 332 150 C 402 200, 412 280, 392 330 C 382 355, 350 350, 342 325 C 330 290, 310 260, 256 260 C 202 260, 182 290, 170 325 C 162 350, 130 355, 120 330 Z"
+            fill="url(#crustGradM)" />
+
+      <!-- Outer Top Arch Layer -->
+      <path d="M 160 170 C 205 130, 307 130, 352 170 C 322 195, 280 205, 256 205 C 232 205, 190 195, 160 170 Z"
+            fill="url(#goldGradM)" opacity="0.35" />
+
+      <!-- Pastry Ridge 1 -->
+      <path d="M 232 135 C 248 130, 264 130, 280 135 C 275 220, 265 240, 256 250 C 247 240, 237 220, 232 135 Z"
+            fill="#ea580c" opacity="0.25" />
+
+      <!-- Pastry Ridge 2 -->
+      <path d="M 180 165 C 200 175, 210 215, 205 265 C 190 265, 175 250, 165 230 C 158 205, 168 180, 180 165 Z"
+            fill="#ea580c" opacity="0.2" />
+
+      <!-- Pastry Ridge 3 -->
+      <path d="M 332 165 C 312 175, 302 215, 307 265 C 322 265, 337 250, 347 230 C 354 205, 344 180, 332 165 Z"
+            fill="#ea580c" opacity="0.2" />
+
+      <!-- Scoring slash lines -->
+      <path d="M 220 160 Q 256 185 292 160" fill="none" stroke="#ea580c" stroke-width="7" stroke-linecap="round" opacity="0.75" />
+      <path d="M 175 210 Q 210 230 225 215" fill="none" stroke="#ea580c" stroke-width="6" stroke-linecap="round" opacity="0.7" />
+      <path d="M 337 210 Q 302 230 287 215" fill="none" stroke="#ea580c" stroke-width="6" stroke-linecap="round" opacity="0.7" />
+
+      <!-- Artisanal Steam / Aroma accents -->
+      <path d="M 226 95 Q 220 80 228 65" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" opacity="0.6" />
+      <path d="M 256 88 Q 262 72 254 58" fill="none" stroke="#ffffff" stroke-width="5.5" stroke-linecap="round" opacity="0.75" />
+      <path d="M 286 95 Q 292 80 284 65" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" opacity="0.6" />
+
+      <!-- Golden crust base shadow -->
+      <path d="M 148 315 C 180 285, 332 285, 364 315 C 330 310, 182 310, 148 315 Z"
+            fill="#c2410c" opacity="0.4" />
+    </g>
+
+    <!-- Bakery brand badge text in banner -->
+    <g transform="translate(256, 415)">
+      <rect x="-130" y="-24" width="260" height="46" rx="23" fill="#ffffff" />
+      <text x="0" y="7" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="22" font-weight="800" fill="#ea580c" letter-spacing="2">SMART BAKERY</text>
+    </g>
+  </g>
+</svg>

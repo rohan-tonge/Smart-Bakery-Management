@@ -1,0 +1,13 @@
+import { Router } from "express";
+import c from "../controllers/notification.controller.js";
+import { authenticateUser } from "../middlewares/auth.middlewares.js";
+import { validateRequest } from "../middlewares/validation.middlewares.js";
+import { notificationQuery, idParam } from "../validators/phase10.validator.js";
+const r = Router();
+r.use(authenticateUser);
+r.get("/stream", c.stream);
+r.get("/", validateRequest({ query: notificationQuery }), c.list);
+r.get("/unread-count", c.unreadCount);
+r.patch("/read-all", c.markAllRead);
+r.patch("/:id/read", validateRequest({ params: idParam }), c.markRead);
+export default r;
